@@ -13,7 +13,8 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
 
     cc::Build::new()
     .file("src/switch.S")
-    .compile("switch.o");
+    .file("src/stubs.S")
+    .compile("asm.o");
 
     Ok(())
 }
