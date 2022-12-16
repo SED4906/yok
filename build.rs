@@ -12,8 +12,9 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("cargo:rerun-if-env-changed=CARGO_PKG_NAME");
 
     cc::Build::new()
-    .file("src/switch.S")
+    .file("src/pic.S")
     .file("src/stubs.S")
+    .file("src/switch.S")
     .compile("asm.o");
 
     Ok(())
