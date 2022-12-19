@@ -7,7 +7,7 @@ Now we have yOK. The `src/` folder is a submodule because I wanted to use Scalar
 - [x] Physical memory management
 - [x] Context switching of threads
 - [ ] Interrupt handling
-- [ ] Virtual memory management
+- [x] Virtual memory management
 - [ ] ELF loading
 - [ ] System calls
 - [ ] IPC

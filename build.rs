@@ -16,6 +16,7 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     .file("src/pic.S")
     .file("src/stubs.S")
     .file("src/switch.S")
+    .file("src/vmm.S")
     .compile("asm.o");
 
     Ok(())
