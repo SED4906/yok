@@ -13,7 +13,6 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
 
     cc::Build::new()
     .compiler("clang")
-    .file("src/pic.S")
     .file("src/stubs.S")
     .file("src/switch.S")
     .file("src/vmm.S")
