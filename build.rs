@@ -15,7 +15,6 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     .compiler("clang")
     .file("src/stubs.S")
     .file("src/switch.S")
-    .file("src/vmm.S")
     .compile("asm.o");
 
     Ok(())
